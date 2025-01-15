@@ -50,7 +50,7 @@ const AddSchool = () => {
     formData.append('image', image);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/addSchool', formData);
+      const response = await axios.post('https://schools-eyck.onrender.com/api/addSchool', formData);
       alert('School added successfully!');
     } catch (error) {
       if (error.response) {

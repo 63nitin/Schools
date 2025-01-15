@@ -7,7 +7,7 @@ const SchoolSearch = () => {
 
   useEffect(() => {
     // Fetch data from API
-    fetch('http://localhost:5000/api/getSchools')
+    fetch('https://schools-eyck.onrender.com/api/getSchools')
       .then(response => response.json())
       .then(data => setSchools(data));
   }, []);
